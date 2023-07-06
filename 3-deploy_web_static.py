@@ -45,7 +45,7 @@ def do_deploy(archive_path):
     except:
         return False
 
-
+@task
 def deploy():
     """creates and distributes an archive to the web servers"""
     archive_path = do_pack()
